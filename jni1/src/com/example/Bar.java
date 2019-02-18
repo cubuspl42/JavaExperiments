@@ -1,6 +1,6 @@
 package com.example;
 
-public class Bar {
+public class Bar extends Foo {
     private native static void nativeMethod();
 
     static {
@@ -8,7 +8,7 @@ public class Bar {
         nativeMethod();
     }
 
-    public static void foo() {
-        System.out.println("foo");
+    public static void bar() {
+        System.out.println("bar");
     }
 }

@@ -17,4 +17,4 @@ main:
 
 main-delayed:
 	native-image --server-shutdown-all
-	native-image --delay-class-initialization-to-runtime=com.example.Bar -cp ../out/production/jni1 com.example.Main ../out/main-delayed
+	native-image -H:JNIConfigurationFiles=jniconfig.json --delay-class-initialization-to-runtime=com.example.Bar -cp ../out/production/jni1 com.example.Main ../out/main-delayed
